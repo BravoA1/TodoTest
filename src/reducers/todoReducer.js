@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export default function todoReducer(state, action) {
   switch (action.type) {
     case "ADD_TODO": {
@@ -6,7 +8,8 @@ export default function todoReducer(state, action) {
         todoList: [
           ...state.todoList,
           {
-            id: crypto.randomUUID(),
+            //id: crypto.randomUUID(),
+            id: uuidv4(),
             content: action.content,
             edit: false,
             done: false,

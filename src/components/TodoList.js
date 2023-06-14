@@ -10,7 +10,7 @@ export default function TodoList({
 }) {
   //console.log(todoList);
   return todoList.length ? (
-    <ul>
+    <ul data-testid="todoList">
       {todoList.map((todo) =>
         todo.edit ? (
           <EditTodo
@@ -32,7 +32,7 @@ export default function TodoList({
     </ul>
   ) : (
     <>
-      <p>Aucune todo pour le moment</p>
+      <p data-testid="noTodo">Aucune todo pour le moment</p>
     </>
   );
 }

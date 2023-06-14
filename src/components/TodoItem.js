@@ -16,6 +16,7 @@ export default function TodoItem({ todo, deleteTodo, toggleTodo, editTodo }) {
       <button
         onClick={() => deleteTodo(todo.id)}
         className="btn btn-primary-reverse mr10"
+        data-testid="deleteTodo"
       >
         Supprimer
       </button>

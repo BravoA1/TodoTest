@@ -4,7 +4,7 @@ export default function AddTodo({ addTodo }) {
   const [value, setValue] = useState("");
 
   function handleChange(e) {
-    console.log(e.target.value);
+    //console.log(e.target.value);
     const todoValue = e.target.value;
     setValue(todoValue);
   }
